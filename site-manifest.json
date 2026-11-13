@@ -1,0 +1,15 @@
+{
+  "archiveSha256": "e2a781abb0b7aff0eab4af59c4d27e99d739eeded4428eaa6a4f6acefe73795b",
+  "parts": [
+    {
+      "path": "site.zip.part01",
+      "size": 20971520,
+      "sha256": "ab44153e45f2c1ca54c339601b1f94f4062bfb264290dc9f77cac84f95caf6c2"
+    },
+    {
+      "path": "site.zip.part02",
+      "size": 15800669,
+      "sha256": "d8ac88b8f01e0da4ac7859eb3a4215dc9e91fc60f78e97c8ff1ccedf2c74943e"
+    }
+  ]
+}

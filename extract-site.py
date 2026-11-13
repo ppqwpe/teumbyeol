@@ -1,0 +1,20 @@
+import hashlib,io,json,pathlib,zipfile
+base=pathlib.Path(__file__).resolve().parent
+manifest=json.loads((base/'site-manifest.json').read_text())
+parts=[]
+for part in manifest['parts']:
+    content=(base/part['path']).read_bytes()
+    assert len(content)==part['size'] and hashlib.sha256(content).hexdigest()==part['sha256'],part['path']
+    parts.append(content)
+archive=b''.join(parts)
+assert hashlib.sha256(archive).hexdigest()==manifest['archiveSha256']
+target=(base/'_site').resolve()
+with zipfile.ZipFile(io.BytesIO(archive)) as z:
+    for entry in z.infolist():
+        dest=(target/entry.filename).resolve()
+        assert dest==target or target in dest.parents,'Unsafe archive path'
+    assert z.testzip() is None
+    z.extractall(target)
+assert (target/'index.html').is_file()
+(target/'.nojekyll').write_text('')
+print('Verified and extracted independent static website')
