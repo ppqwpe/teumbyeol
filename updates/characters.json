@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-19",
+  "updated": [
+    {
+      "id": "hamster",
+      "name": "햄찌원",
+      "motions": 7
+    },
+    {
+      "id": "gorilla",
+      "name": "도톰팔 고릴라",
+      "motions": 3
+    },
+    {
+      "id": "sparrow",
+      "name": "까칠 참새",
+      "motions": 10
+    },
+    {
+      "id": "otter",
+      "name": "뜨개 해달",
+      "motions": 6
+    },
+    {
+      "id": "chick",
+      "name": "왹병",
+      "motions": 10
+    }
+  ],
+  "core": [
+    {
+      "id": "mochi",
+      "name": "왹냥 모찌"
+    },
+    {
+      "id": "hamster",
+      "name": "햄찌원"
+    },
+    {
+      "id": "dragon",
+      "name": "이끼 용"
+    },
+    {
+      "id": "platypus",
+      "name": "보라 오리너구리"
+    },
+    {
+      "id": "gorilla",
+      "name": "도톰팔 고릴라"
+    },
+    {
+      "id": "squirrel",
+      "name": "연보라 날다람쥐"
+    },
+    {
+      "id": "fluffy",
+      "name": "포슬 외계냥"
+    },
+    {
+      "id": "koala",
+      "name": "안경 코알라"
+    },
+    {
+      "id": "tiger",
+      "name": "살구 호랑이"
+    },
+    {
+      "id": "rabbit",
+      "name": "달잠 토끼"
+    },
+    {
+      "id": "sparrow",
+      "name": "까칠 참새"
+    },
+    {
+      "id": "otter",
+      "name": "뜨개 해달"
+    },
+    {
+      "id": "chick",
+      "name": "왹병"
+    }
+  ],
+  "walkingNeighbors": [
+    {
+      "name": "포슬 외계냥",
+      "region": "cave"
+    },
+    {
+      "name": "살구 호랑이",
+      "region": "desert"
+    },
+    {
+      "name": "이끼 용",
+      "region": "highland"
+    },
+    {
+      "name": "달잠 토끼",
+      "region": "highland"
+    },
+    {
+      "name": "안경 코알라",
+      "region": "meadow"
+    },
+    {
+      "name": "까칠 참새",
+      "region": "meadow"
+    },
+    {
+      "name": "햄찌원",
+      "region": "moss"
+    },
+    {
+      "name": "도톰팔 고릴라",
+      "region": "moss"
+    },
+    {
+      "name": "보라 오리너구리",
+      "region": "sea"
+    },
+    {
+      "name": "뜨개 해달",
+      "region": "wetland"
+    },
+    {
+      "name": "연보라 날다람쥐",
+      "region": "wind"
+    },
+    {
+      "name": "왹병",
+      "region": "wind"
+    }
+  ]
+}

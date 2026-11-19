@@ -17,4 +17,20 @@ with zipfile.ZipFile(io.BytesIO(archive)) as z:
     z.extractall(target)
 assert (target/'index.html').is_file()
 (target/'.nojekyll').write_text('')
-print('Verified and extracted independent static website')
+update_manifest=base/'updates/manifest.json'
+if update_manifest.exists():
+    update=json.loads(update_manifest.read_text())
+    chunks=[]
+    for part in update['parts']:
+        content=(base/part['path']).read_bytes()
+        assert len(content)==part['size'] and hashlib.sha256(content).hexdigest()==part['sha256']
+        chunks.append(content)
+    content=b''.join(chunks)
+    assert hashlib.sha256(content).hexdigest()==update['archiveSha256']
+    with zipfile.ZipFile(io.BytesIO(content)) as z:
+        for entry in z.infolist():
+            dest=(target/entry.filename).resolve()
+            assert dest==target or target in dest.parents,'Unsafe update path'
+        assert z.testzip() is None
+        z.extractall(target)
+print('Verified and extracted independent static website and latest update')

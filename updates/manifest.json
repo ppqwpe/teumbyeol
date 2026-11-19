@@ -1,0 +1,15 @@
+{
+  "parts": [
+    {
+      "path": "updates/20261119.part1",
+      "size": 20971520,
+      "sha256": "ca9d8e1a4b110d473ea293d3b238b142410c381527b9e8bf9923fc6d406bcd30"
+    },
+    {
+      "path": "updates/20261119.part2",
+      "size": 13061996,
+      "sha256": "17e3b8f5fe2f905dd072cfe03e168d29c71acdeb76f26b9a6a8c18184ffc12cd"
+    }
+  ],
+  "archiveSha256": "26c0d3ef88bfef002bdd0a8a56a3f8e52964917b97ff2dc1811910fd62eaa7e1"
+}
