@@ -2,3 +2,6 @@
 :root .loading.done{display:none}
 
 .walk-link{color:#f4eee2;text-decoration:none;padding:10px 14px;border:1px solid #786a89;border-radius:22px;background:#211a2e;font-size:13px}
+
+/* Quiet cosmic pixel interface */
+:root{--sky:#100e1b;--panel:#211b2d;--ink:#eee6d7;--muted:#b7a9c4;--line:#62536f}.top-tools button,.walk-link,.dock,.dock button,dialog,.search,.chips button,.action,.catalog-grid button{border-radius:7px}.dock{border:1px solid #8f7e9b80;box-shadow:0 4px 0 #090710;background:#21192fed}.dock button[aria-pressed=true]{background:#47513b55}.portrait-stage{background:radial-gradient(ellipse at center,#53604a55,transparent 65%),#171321;border:1px solid #4c405c;border-radius:5px}.mood-button{margin-top:12px;color:#d9e4bc}.mood-line{font-size:13px;line-height:1.8;border-left:2px solid #a1b88a;padding:10px 13px;background:#2b2437;margin:8px 0 20px}.atlas-note{font-size:12px;color:#b8a9c7;line-height:1.7}.brand>span{letter-spacing:1px}.catalog-grid button{background:#30283c;border-color:#61516f55}.walk-link{color:#e4edcd;background:#343d32}.hint{color:#c4b5d1;font-size:11px}@media(max-width:540px){.brand>span{display:none}.walk-link{padding:10px;font-size:12px}.skybar{left:17px;right:14px}.top-tools{gap:5px}}

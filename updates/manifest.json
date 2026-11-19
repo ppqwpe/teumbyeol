@@ -3,13 +3,13 @@
     {
       "path": "updates/20261119.part1",
       "size": 20971520,
-      "sha256": "ca9d8e1a4b110d473ea293d3b238b142410c381527b9e8bf9923fc6d406bcd30"
+      "sha256": "79bb744a9b8082d446c4e2bde8ea99bc91f1fa30d703556308b625c880bb02c6"
     },
     {
       "path": "updates/20261119.part2",
-      "size": 13061996,
-      "sha256": "17e3b8f5fe2f905dd072cfe03e168d29c71acdeb76f26b9a6a8c18184ffc12cd"
+      "size": 16809981,
+      "sha256": "fa9ca2166c7f8e8b6060d54583dfe2d02b31b7c066193048a47df9b7e9bebfcf"
     }
   ],
-  "archiveSha256": "26c0d3ef88bfef002bdd0a8a56a3f8e52964917b97ff2dc1811910fd62eaa7e1"
+  "archiveSha256": "41c3af2bbe6a394390835c05954880ccc061b2a7bdf9c671750439262c5d4a30"
 }
